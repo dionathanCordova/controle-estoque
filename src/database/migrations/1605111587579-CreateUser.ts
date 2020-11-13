@@ -40,6 +40,7 @@ export default class CreateUser1605111587579 implements MigrationInterface {
 						name: 'isAdmin',
 						type: 'boolean',
 						default: false,
+						isNullable: true,
 					},
 					{
 						name: 'created_at',

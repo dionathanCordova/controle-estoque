@@ -1,9 +1,10 @@
-import express from 'express';
+import { Router } from 'express';
+import produtoRouter from '../modules/Produtos/routes/produto.routes';
+import userRoute from '../modules/users/routes/user.routes';
 
-const route = express.Router();
+const route = Router();
 
-route.get('/', (request, response) =>
-	response.json({ message: 'Hello controle' }),
-);
+route.use(userRoute);
+route.use(produtoRouter);
 
 export default route;

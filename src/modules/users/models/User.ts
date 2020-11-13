@@ -36,3 +36,5 @@ class UserModel {
 	@UpdateDateColumn()
 	updated_at: Date;
 }
+
+export default UserModel;
